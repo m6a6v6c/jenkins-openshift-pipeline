@@ -86,6 +86,8 @@ items:
       targetPort: 8080
     selector:
       deployment: webserver
+      app: webserver
+    type: ClusterIP  
   status:
     loadBalancer: {}
 kind: List
