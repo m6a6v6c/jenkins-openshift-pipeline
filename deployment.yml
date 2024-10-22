@@ -4,15 +4,6 @@ metadata:
   name: mavc23
   namespace: mavc23-dev
 ---
-kind: ClusterRole
-apiVersion: rbac.authorization.k8s.io/v1
-metadata:
-  name: mavc23
-rules:
-- apiGroups: ["extensions", "apps"]
-  resources: ["deployments"]
-  verbs: ["get", "watch", "list"]
----
 apiVersion: v1
 items:
 - apiVersion: image.openshift.io/v1
